@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Enquiries - Andie Construction</title>
+    <link rel="stylesheet" href="D:\student_project-jan25\civilEnggClientAssist\stylesheet\maintain_page.css">
+</head>
+<body>
+    {% include 'header.html' %}
+    <div class="content">
+        <div class="enquiry-container">
+            <h2>More Enquiries</h2>
+            <form method="POST" action="/submit_enquiry" class="enquiry-form">
+                {% csrf_token %}
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2025 Andie Construction. All rights reserved.</p>
+    </div>
+</body>
+</html>
