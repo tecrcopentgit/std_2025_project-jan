@@ -1,0 +1,15 @@
+{% extends 'Client/layout.html'%}
+{% block content %}
+<h2>Your Purchased Lands</h2>
+<ul>
+  {% for purchase in purchases %}
+    <li>
+      <strong>{{ purchase.land.title }}</strong> – {{ purchase.land.location }} – ₹{{ purchase.land.price }}  
+      <br>Status: <em>{{ purchase.get_status_display }}</em>  
+      <br><a href="{% url 'Client:processing' purchase.id %}">View Purchase</a>
+    </li>
+  {% empty %}
+    <p>You haven’t purchased any lands yet.</p>
+  {% endfor %}
+</ul>
+{% endblock %}

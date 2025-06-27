@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url('https://capmax.com/wp-content/uploads/2023/10/banner-image-1.webp');
+}
+
+
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(70, 161, 236);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+
+.navigator {
+    display: flex;
+    align-items: center;
+    flex-wrap:nowrap;
+    max-width: 100%;
+    overflow:hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+}
+
+.navigator a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.navigator a img {
+    margin-right: 5px;
+}
+
+.navigator a.active, .navigator a:hover {
+    background-color: green;
+}
+
+.navigator a:not(.active):hover {
+    background-color: #555;
+}
+
+
+
+
+.content {
+    padding: 20px;
+}
+
+.content section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+
+
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
+button {
+    background-color:red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: darkred;
+}
+
+
+@media (max-width: 768px) {
+    .header{
+        display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    }
+    .navigator {
+        flex-wrap: wrap; /* Allows items to wrap to the next line */
+        justify-content: center; /* Centers items horizontally */
+        padding: 5px; /* Reduces padding for smaller screens */
+    }
+
+    .navigator a {
+        margin: 5px; /* Reduces margin for smaller screens */
+        font-size: 14px; /* Adjusts font size for better readability */
+    }
+
+    .navigator img {
+        max-width: 20px; /* Reduces image size for smaller screens */
+        height: auto;
+    }
+}

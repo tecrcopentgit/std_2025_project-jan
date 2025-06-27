@@ -1,0 +1,21 @@
+.temp{
+    display:flex;
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    justify-self: center;
+    
+}
+#object{
+    text-align: center;
+  padding: 2em;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  margin: 4rem;
+  justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+}

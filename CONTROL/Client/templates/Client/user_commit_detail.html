@@ -1,0 +1,70 @@
+{% extends 'Client/layout.html' %}
+{% block content %}
+<div style="max-width: 900px; margin: 2rem auto; padding: 2rem; background: #fdfdfd; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+  <h2 style="text-align: center; color: #1d4ed8;">My Project Overview</h2>
+
+  {% if commit %}
+    <section>
+      <h3> Financial Overview</h3>
+      <ul>
+        <li><strong>Estimated Cost:</strong> ₹{{ commit.estimated_amount }}</li>
+        <li><strong>Advance Paid:</strong> ₹{{ commit.advance_given }}</li>
+        <li><strong>Paid Till Now:</strong> ₹{{ commit.paid_amount }}</li>
+        <li><strong>Remaining Balance:</strong> ₹{{ commit.balance }}</li>
+        <li><strong>Organization Charge:</strong> ₹{{ commit.organization_charge }}</li>
+      </ul>
+    </section>
+
+    <section style="margin-top: 2rem;">
+      <h3> Materials Used</h3>
+      {% if materials %}
+        <table width="100%" border="1" cellspacing="0" cellpadding="8">
+          <tr>
+            <th>Material</th>
+            <th>Quantity</th>
+            <th>Rate</th>
+            <th>Total</th>
+          </tr>
+          {% for m in materials %}
+          <tr>
+            <td>{{ m.name }}</td>
+            <td>{{ m.quantity }}</td>
+            <td>₹{{ m.rate_per_unit }}</td>
+            <td>₹{{ m.total_cost }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      {% else %}
+        <p><em>No materials recorded yet.</em></p>
+      {% endif %}
+    </section>
+
+    <section style="margin-top: 2rem;">
+      <h3>Worker Contribution</h3>
+      {% if workers %}
+        <table width="100%" border="1" cellspacing="0" cellpadding="8">
+          <tr>
+            <th>Role</th>
+            <th>Daily Salary</th>
+            <th>Days Worked</th>
+            <th>Total Payment</th>
+          </tr>
+          {% for w in workers %}
+          <tr>
+            <td>{{ w.role }}</td>
+            <td>₹{{ w.daily_salary }}</td>
+            <td>{{ w.days_worked }}</td>
+            <td>₹{{ w.total_salary }}</td>
+          </tr>
+          {% endfor %}
+        </table>
+      {% else %}
+        <p><em>No workers assigned yet.</em></p>
+      {% endif %}
+    </section>
+
+  {% else %}
+    <p style="text-align: center; font-style: italic; margin-top: 2rem;">No work pending. Your project has not been committed yet.</p>
+  {% endif %}
+</div>
+{% endblock%}

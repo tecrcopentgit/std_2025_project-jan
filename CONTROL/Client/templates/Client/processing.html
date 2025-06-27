@@ -1,0 +1,18 @@
+{% extends 'Client/layout.html' %}
+
+{% block content %}
+<div class="processing-box">
+    <h2>Processing Your Purchase</h2>
+    <p>Thank you for your interest! Our team is reviewing your request to buy <strong>{{ purchase.land.title }}</strong>.</p>
+
+    <div class="land-info">
+      <p><strong>Location:</strong> {{ purchase.land.location }}</p>
+      <p><strong>Price:</strong> ₹{{ purchase.land.price }}</p>
+      <p><strong>Area:</strong> {{ purchase.land.area_sqft }} sqft</p>
+    </div>
+
+    <div class="status">
+      Current Status: {{ purchase.get_status_display }}
+    </div>
+  </div>
+{% endblock %}
