@@ -1,9 +1,0 @@
-body { font-family: Arial, sans-serif;background: url("https://c.wallhere.com/photos/6a/fa/new_york_city_nyc_travel_sky_usa_america-766981.jpg!d"); margin: 0; padding: 0; background-color: #f4f4f4; } .header { display: flex; justify-content: space-between; align-items: center; background-color: orangered; color: white; padding: 10px 20px; } .header h1 { margin: 0; } .navigator { display: flex; gap: 15px; } .navigator a { color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; transition: background-color 0.3s ease; } .navigator a:hover { background-color: darkred; } .content { padding: 20px; } .footer { background-color: #333; color: white; text-align: center; padding: 10px 0;margin-top:217px;}
-.chat-container{width:600px;margin:50px auto;padding:20px;background-color: white;box-shadow:0 2px 4px rgba(0,0,0,0.1);border-radius:5px;} .navigator a.active { background-color: darkolivegreen;}
-.chat-container h2{text-align: center;}
-.chat-box{display:flex;flex-direction:column;}
-.messages{flex:1;overflow-y:auto;margin-bottom:20px;border :1px solid #ccc;padding:10px;border-radius:5px;border-radius:#f9f9f9;}
-form{display:flex;flex-direction:column;}form label{margin-bottom:5px}form textarea{resize:vertical;padding:10px;border:1px solid #ccc;border-radius:5px;}
-form button{margin-top:10px;padding:10px;background-color:orangered;color:white;border:none;border: 5px;cursor:pointer;transition:0.3s ease}form button:hover{background-color:darkred;}
-.chat-box{display:flex;align-items:center;} .chat-box label{display:none;} .chat-box textarea{flex:1;resize:vertical;padding:10px;border:1px solid #ccc;border-radius:5px;margin-right:10px;}.chat-form button{padding:10px 20px;background-color:orangered;color:white;border:none;border-radius:5px;cursor:pointer;transition:background-color 0.3sec ease;}
-.chat-form button:hover {background-color:darkred;}

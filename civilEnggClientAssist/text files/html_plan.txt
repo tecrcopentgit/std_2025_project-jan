@@ -1,5 +1,0 @@
-defaul login page added
-new login page added
-homepage added
-html in home page(land detaoils,maintain page,new project,ongoing project,chat with organiser)
-home_page para- this is the application to provide an assistance and guide to a each and every client of the construction.this idea helps the enginneers and the client to improve the best distant communnication.the application provides the client about the details of the company,to know about status of thier project,financial details and more and more information.so the the client and engineers of the construction doesn't want to meet each other and does n't want to come directionly to the land of work undertaken..the clients and engineers do thier own works and does n't want take about thier travel and time...it means the client have to use this application to know all details about thier project and work done in all over the world .the user can access the details of thier project and communicate with the construction from any part of the world...access the details the details on provided below...
